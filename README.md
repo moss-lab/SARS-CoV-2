@@ -12,25 +12,25 @@ The output of this analysis is a text file which reports the name of the input f
 An example output is listed here:
 
 "Reference File:
-Number of nucleotides paired: ###
-Number of nucleotides unpaired: ###
-Percent of nucleotides paired: ###
+Number of nucleotides paired: xxx
+Number of nucleotides unpaired: xxx
+Percent of nucleotides paired: xxx
 
 Target File:
-Number of nucleotides paired: ###
-Number of nucleotides unpaired: ###
-Percent of nucleotides paired: ###
+Number of nucleotides paired: xxx
+Number of nucleotides unpaired: xxx
+Percent of nucleotides paired: xxx
 
 Comparison of reference file to target file:
 Reference File= predicted_model.ct
 Target File= known_model.ct
-Number of consistent nts/pairings: ###
-Number of conflicting nts/pairings: ###
-Percent consistency between files: ###
+Number of consistent nts/pairings: xxx
+Number of conflicting nts/pairings: xxx
+Percent consistency between files: xxx
 
 Conflicting BPs between the Reference and Target file
 Position	reference(i)	reference(j)	target(i)	target(j)
-	#			#				#				#			#		"
+	xxx			xxx				xxx				xxx			xxx		"
 
 Command line to run the code: python ct_compare.py ref_file.ct target_file.ct output_name
 
@@ -45,8 +45,8 @@ When comparing two reactivity informed models, one was designated as the predict
 Output from this script is a simple text file containing the name of the reference (i.e. predicted) and target (i.e. known) .ct input files and the corresponding PPV and sensitivity values, se example below:
 "Reference File:	predicted_structure.ct
 Target File:	known_structure.ct
-Sensitivity=	###
-PPV=	###"
+Sensitivity=	xxx
+PPV=	xxx"
 
 Command line to run the code: python ct_sensitivity_PPV.py known_structure.ct predicted_structure.ct [output_name]
 
@@ -62,29 +62,29 @@ The output will be a text file containing the percent agreement for each zscore 
 "input final partner file:	Final_partners_ScanFold_output.txt
 input conflict list:	ct_compare_output.txt
 
-<=-2 nt avg. z-score similarity:	###
-number of similar nt <= -2 zs:	###
-number of conflicting nt <= -2 zs:	###
+<=-2 nt avg. z-score similarity:	xxx
+Number of similar nt <= -2 zs:	xxx
+Number of conflicting nt <= -2 zs:	xxx
 
->=-2, <=-1 nt avg. z-score similarity:	###
-number of similar nt <= -1 zs:	###
-number of conflicting nt <= -1 zs:	###
+>=-2, <=-1 nt avg. z-score similarity:	xxx
+Number of similar nt <= -1 zs:	xxx
+Number of conflicting nt <= -1 zs:	xxx
 
->=-1, <=0 nt avg. z-score similarity:	###
-number of similar nt >= -1 zs:	###
-number of conflicting nt >= -1 zs:	###
+>=-1, <=0 nt avg. z-score similarity:	xxx
+Number of similar nt >= -1 zs:	xxx
+Number of conflicting nt >= -1 zs:	xxx
 
->=0, <=1 nt avg. z-score similarity:	###
-number of similar nt >= -1 zs:	###
-number of conflicting nt >= -1 zs:	###
+>=0, <=1 nt avg. z-score similarity:	xxx
+Number of similar nt >= -1 zs:	xxx
+Number of conflicting nt >= -1 zs:	xxx
 
->=1, <=2 nt avg. z-score similarity:	###
-number of similar nt <= -1 zs:	###
-number of conflicting nt <= -1 zs:	###
+>=1, <=2 nt avg. z-score similarity:	xxx
+Number of similar nt <= -1 zs:	xxx
+Number of conflicting nt <= -1 zs:	xxx
 
->=2 nt avg. z-score similarity:	###
-number of similar nt <= -2 zs:	###
-number of conflicting nt <= -2 zs:	###
+>=2 nt avg. z-score similarity:	xxx
+Number of similar nt <= -2 zs:	xxx
+Number of conflicting nt <= -2 zs:	xxx
 "
 
 Command line to run the code: python  zscore_conflict_analyzer.py final_partners.txt ct_compare_output.txt output_name
