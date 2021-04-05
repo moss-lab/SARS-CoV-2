@@ -63,28 +63,28 @@ The output will be a text file containing the percent agreement for each zscore 
 input conflict list:	ct_compare_output.txt
 
 <=-2 nt avg. z-score similarity:	###
-# of similar nt <= -2 zs:	###
-# of conflicting nt <= -2 zs:	###
+number of similar nt <= -2 zs:	###
+number of conflicting nt <= -2 zs:	###
 
 >=-2, <=-1 nt avg. z-score similarity:	###
-# of similar nt <= -1 zs:	###
-# of conflicting nt <= -1 zs:	###
+number of similar nt <= -1 zs:	###
+number of conflicting nt <= -1 zs:	###
 
 >=-1, <=0 nt avg. z-score similarity:	###
-# of similar nt >= -1 zs:	###
-# of conflicting nt >= -1 zs:	###
+number of similar nt >= -1 zs:	###
+number of conflicting nt >= -1 zs:	###
 
 >=0, <=1 nt avg. z-score similarity:	###
-# of similar nt >= -1 zs:	###
-# of conflicting nt >= -1 zs:	###
+number of similar nt >= -1 zs:	###
+number of conflicting nt >= -1 zs:	###
 
 >=1, <=2 nt avg. z-score similarity:	###
-# of similar nt <= -1 zs:	###
-# of conflicting nt <= -1 zs:	###
+number of similar nt <= -1 zs:	###
+number of conflicting nt <= -1 zs:	###
 
 >=2 nt avg. z-score similarity:	###
-# of similar nt <= -2 zs:	###
-# of conflicting nt <= -2 zs:	###
+number of similar nt <= -2 zs:	###
+number of conflicting nt <= -2 zs:	###
 "
 
 Command line to run the code: python  zscore_conflict_analyzer.py final_partners.txt ct_compare_output.txt output_name
